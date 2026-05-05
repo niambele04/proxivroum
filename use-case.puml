@@ -1,0 +1,54 @@
+@startuml ProxiVroum - Diagramme de cas d'utilisation
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor Conducteur as C
+actor Passager as P
+actor Modérateur as M
+actor "Service Comptabilité" as SC
+
+rectangle ProxiVroum {
+
+  ' Conducteur
+  usecase "Publier un trajet" as UC1
+  usecase "Modifier / annuler un trajet" as UC2
+  usecase "Consulter ses réservations" as UC3
+  usecase "Noter un passager" as UC4
+
+  ' Passager
+  usecase "Rechercher un trajet" as UC5
+  usecase "Réserver une place" as UC6
+  usecase "Payer un trajet" as UC7
+  usecase "Noter un conducteur" as UC8
+  usecase "Contacter le support" as UC9
+
+  ' Modérateur
+  usecase "Gérer les litiges" as UC10
+  usecase "Suspendre un utilisateur" as UC11
+  usecase "Voir les statistiques" as UC12
+
+  ' Service Comptabilité
+  usecase "Exporter données comptables" as UC13
+  usecase "Consulter les transactions" as UC14
+}
+
+C --> UC1
+C --> UC2
+C --> UC3
+C --> UC4
+
+P --> UC5
+P --> UC6
+P --> UC7
+P --> UC8
+P --> UC9
+
+M --> UC10
+M --> UC11
+M --> UC12
+
+SC --> UC13
+SC --> UC14
+
+@enduml
