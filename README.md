@@ -16,8 +16,11 @@ Plateforme de covoiturage régionale.
 - Données personnelles conformes RGPD
 
 ## Structure du projet
+
+```
 docs/
 ├── user-stories.md
 ├── criteres-qualite.md
 └── adr/
     └── ADR-001-paiement.md
+```
