@@ -21,11 +21,12 @@ Plateforme de covoiturage régionale.
 proxivroum/
 ├── README.md
 └── docs/
-    ├── user-stories.md
-    ├── criteres-qualite.md
-    ├── use-case.puml
-    ├── mcd.md
-    ├── class-diagram.md
-    └── adr/
+    ├── adr/
         └── ADR-001-paiement.md
+    ├── class-diagram.md
+    ├── criteres-qualite.md
+    ├── mcd.md
+    ├── use-case.puml  
+    └──user-stories.md
+ 
 ```
