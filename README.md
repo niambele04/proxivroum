@@ -18,9 +18,14 @@ Plateforme de covoiturage régionale.
 ## Structure du projet
 
 ```
-docs/
-├── user-stories.md
-├── criteres-qualite.md
-└── adr/
-    └── ADR-001-paiement.md
+proxivroum/
+├── README.md
+└── docs/
+    ├── user-stories.md
+    ├── criteres-qualite.md
+    ├── use-case.puml
+    ├── mcd.md
+    ├── class-diagram.md
+    └── adr/
+        └── ADR-001-paiement.md
 ```
