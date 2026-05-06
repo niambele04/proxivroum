@@ -22,8 +22,3 @@ erDiagram
   NOTATION { uuid id PK int note string commentaire datetime date_notation }
   LITIGE { uuid id PK string description string statut datetime date_ouverture }
 ```
-
-## Vérification 3NF
-- **1FN** : toutes les valeurs sont atomiques
-- **2FN** : chaque attribut dépend de toute la clé primaire
-- **3FN** : aucune dépendance transitive entre attributs non-clés
