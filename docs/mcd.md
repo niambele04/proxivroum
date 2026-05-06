@@ -1,3 +1,8 @@
+# MCD — ProxiVroum
+
+## Entités et relations
+
+```mermaid
 erDiagram
   UTILISATEUR ||--o{ VEHICULE : possède
   UTILISATEUR ||--o{ TRAJET : publie
@@ -16,3 +21,9 @@ erDiagram
   PAIEMENT { uuid id PK float montant datetime date_paiement string statut string ref_stripe }
   NOTATION { uuid id PK int note string commentaire datetime date_notation }
   LITIGE { uuid id PK string description string statut datetime date_ouverture }
+```
+
+## Vérification 3NF
+- **1FN** : toutes les valeurs sont atomiques
+- **2FN** : chaque attribut dépend de toute la clé primaire
+- **3FN** : aucune dépendance transitive entre attributs non-clés
